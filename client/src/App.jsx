@@ -29,7 +29,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post(`http://localhost:5000/api/simparu/siswa/upload-excel`, formData);
+      const response = await axios.post(`http://localhost:5000/api/upload`, formData);
       console.log('File uploaded successfully:', response.data);
       alert('File uploaded successfully');
     } catch (error) {
